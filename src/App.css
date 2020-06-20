@@ -5,8 +5,9 @@
     --primary-color: #dc3545;
     --dark-color: #333333;
     --light-color: #f4f4f4;
-    --danger-color: #dc3545;
+    --danger-color: #d6611d;
     --success-color: #28a745;
+    --secondary-color: #1850a3;
 }
 
 * {
@@ -282,6 +283,14 @@ img {
 .badge-success,
 .alert-success {
     background: var(--success-color);
+    color: #fff;
+}
+
+.btn-secondary,
+.bg-secondary,
+.badge-secondary,
+.alert-secondary {
+    background: var(--secondary-color);
     color: #fff;
 }
 
