@@ -110,7 +110,10 @@ const User = ({ match }) => {
                 <div className='badge badge-primary'>
                     Public Repos: {public_repos}{" "}
                 </div>
-                <div className='badge badge-danger'>
+                <div
+                    className='badge'
+                    style={{ backgroundColor: "#ff7300", color: "white" }}
+                >
                     Public Gists: {public_gists}{" "}
                 </div>
             </div>
