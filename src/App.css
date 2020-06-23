@@ -392,9 +392,14 @@ table th {
     }
 
     .grid-2,
-    .grid-3,
     .grid-4 {
         grid-template-columns: 1fr;
+    }
+
+    .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
     }
 
     /* Text Styles */
@@ -424,5 +429,14 @@ table th {
     .align-right {
         position: absolute;
         right: 0px;
+    }
+}
+
+@media (max-width: 530px) {
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
 }
